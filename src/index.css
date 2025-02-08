@@ -1,18 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: gilroy;
-  color: #fff;
-}
-html,body{
-  height: 100%;
-  width: 100%;
-}
+/* filepath: /C:/Users/narin/OneDrive/Desktop/learn-react/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
-  background-color: #111;
-}
-button{
-  background-color: lightseagreen;
-  padding:5px 10px;
+    background-color: #111;
+    color: #fff;
 }

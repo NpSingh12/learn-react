@@ -3,12 +3,12 @@
 3. import export✅
 4. React Folder Structure✅
 5. Real Dom Vs Virtual Dom✅
-6. JSX
-7. useState Hooks(variable of react)
-8. Adding CSS (Normal and Tailwind)
-9. Calling Function in React
-10. Form handling in react
-11. Two way Binding
+6. JSX✅
+7. useState Hooks(variable of react)✅
+8. Adding CSS (Normal and Tailwind)✅
+9. Calling Function in React✅
+10. Form handling in react✅
+11. Two way Binding✅
 12. Components
 13. props drilling
 14. Rendering JSON Data
