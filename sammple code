@@ -1,0 +1,58 @@
+// import React from 'react'
+// import Card from './components/Card'
+
+// const App = (props ) => {
+//   const user= [
+//     {
+//       "name": "Amit Sharma",
+//       "age": 28,
+//       "city": "New Delhi",
+//       "profession": "Software Engineer",
+//       "profile_photo": "https://example.com/photos/amit.jpg"
+//     },
+//     {
+//       "name": "Sophia Patel",
+//       "age": 25,
+//       "city": "Mumbai",
+//       "profession": "Data Scientist",
+//       "profile_photo": "https://example.com/photos/sophia.jpg"
+//     },
+//     {
+//       "name": "Rohan Verma",
+//       "age": 30,
+//       "city": "Bangalore",
+//       "profession": "UI/UX Designer",
+//       "profile_photo": "https://example.com/photos/rohan.jpg"
+//     },
+//     {
+//       "name": "Emily D'Souza",
+//       "age": 27,
+//       "city": "Pune",
+//       "profession": "Product Manager",
+//       "profile_photo": "https://example.com/photos/emily.jpg"
+//     },
+//     {
+//       "name": "Kabir Khan",
+//       "age": 32,
+//       "city": "Hyderabad",
+//       "profession": "Cybersecurity Analyst",
+//       "profile_photo": "https://example.com/photos/kabir.jpg"
+//     }
+//   ]
+  
+  
+//   return (
+//     <div>
+//       <div className='p-10'>
+        
+//         {user.map(function(elem,idx){
+//           return <Card key={idx} user={elem.name} profile_photo={elem.profile_photo} age={elem.age} city={elem.city} profession={elem.profession}/>
+//         })}
+//         {/* <Card/> */}
+        
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App

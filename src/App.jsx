@@ -1,24 +1,39 @@
-import React from 'react'
-import Header from './components/Header'
+import axios from "axios";
+import React from "react";
+import { useState } from "react";
 
 const App = () => {
+
+  const [data, setdata] = useState([])
+  
+  const getdata= async ()=>{
+     const response = await axios.get('https://picsum.photos/v2/list')
+
+     setdata(response.data);
+
+     console.log(data);
+     
+     
+  }
+
+
   return (
-    <>
-  <Header></Header>
-  <nav className=' flex py-5 px-10 items-center justify-between p-5 bg-green-800
- text-white'>
-    <h2>hello </h2>
-    <div className='flex gap-8 iteam-center'>
-      <h4 className='text-xl'>about</h4>
-      <h4 className='text-xl'>contact</h4>
-      <h4 className='text-xl'>services</h4>
-      <h4 className='text-xl'>your ac</h4>
+    <div className="p-10">
+
+      <button onClick={getdata} className=" bg-teal-300 text-white font-semibold text-2xl px-6 py-3 rounded active:scale-75">
+        Get Data
+      </button>
+      <div className="p-5 bg-gray-950"> {data.map(function(elem, idx){
+        return <div key={idx} className="bg-gray-50 text-black w-full items-center flex justify-between px-7 py-6 rounded m-3">
+          <img className="h-40 text-start" src={elem.download_url
+} alt="" />
+          <h1>{elem.author}</h1>
+
+
+        </div>
+      })} </div>
     </div>
-  </nav>
+  );
+};
 
-
-    </>
-  )
-}
-
-export default App
+export default App;

@@ -1,7 +1,6 @@
-/* filepath: /C:/Users/narin/OneDrive/Desktop/learn-react/src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
 
 body{
     background-color: #111;
